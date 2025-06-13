@@ -166,5 +166,5 @@ cython_debug/
 tmp*
 /dbt_project/dbt_packages/
 
-# MinIO runtime data (should not be committed)
+# MinIO data files (generated during runtime)
 minio/data/
