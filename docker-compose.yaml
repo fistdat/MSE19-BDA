@@ -77,6 +77,8 @@ services:
       - 9001:9001
       - 9000:9000
     command: ["server", "/data", "--console-address", ":9001"]
+    volumes:
+      - ./minio/data:/data
 
   mc:
     depends_on:

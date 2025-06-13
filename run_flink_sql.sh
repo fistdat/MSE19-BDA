@@ -59,6 +59,11 @@ CREATE TABLE iceberg.raw_data.users (
     source_db STRING,
     source_schema STRING,
     source_table STRING
+) WITH (
+    'format-version'='2',
+    'write.format.default'='parquet',
+    'write.target-file-size-bytes'='134217728',
+    'write.metadata.metrics.default'='truncate(16)'
 );
 
 CREATE TABLE iceberg.raw_data.accounts (
@@ -72,6 +77,11 @@ CREATE TABLE iceberg.raw_data.accounts (
     source_db STRING,
     source_schema STRING,
     source_table STRING
+) WITH (
+    'format-version'='2',
+    'write.format.default'='parquet',
+    'write.target-file-size-bytes'='134217728',
+    'write.metadata.metrics.default'='truncate(16)'
 );
 
 
