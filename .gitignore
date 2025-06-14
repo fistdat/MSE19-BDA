@@ -170,3 +170,4 @@ tmp*
 minio/data/
 plugins-clean/
 *.jar
+venv/
