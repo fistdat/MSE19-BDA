@@ -168,3 +168,4 @@ tmp*
 
 # MinIO data files (generated during runtime)
 minio/data/
+plugins-clean/
